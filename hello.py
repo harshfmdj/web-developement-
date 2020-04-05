@@ -1,1 +1,0 @@
-pint("hello world")
