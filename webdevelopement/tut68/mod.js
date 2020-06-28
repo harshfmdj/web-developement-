@@ -11,4 +11,3 @@ module.exports = {
     name: "Harry",
     repo: "GitHUB"
 }
-// module.exports.name = "Harry"
