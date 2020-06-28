@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json tutorial</title>
+</head>
+
+<body>
+    <div class="container">
+    </div>
+    <script>
+        let jsonObj = {
+            name: "Harry",
+            channel: "CWH",
+            friend: "Rohan Das",
+            food: "Bhindi"
+        };
+        r = prompt("write the integer");
+        s = parseInt(r);
+        console.log(s + 14);
+        console.log(jsonObj);
+        let myJsonStr = JSON.stringify(jsonObj);
+        myJsonStr = myJsonStr.replace("Harry", "Lerry")
+        console.log(myJsonStr);
+        newJsonObj = JSON.parse(myJsonStr);
+        console.log(newJsonObj);
+    </script>
+
+</body>
+
+</html>

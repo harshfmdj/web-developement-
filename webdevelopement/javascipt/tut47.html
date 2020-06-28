@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        #btn {
+            padding: 10px;
+            border-radius: 8px;
+            background-color: darkgrey;
+            border: 2px solid black;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="main" class="container">
+        <h1>time now is </h1>
+        <span id="time"></span>
+        <p id='para'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, voluptate saepe error
+            quaerat totam
+            cupiditate. Quasi sunt consequatur unde, fugiat, illo consequuntur nulla libero aspernatur tempore dicta
+            numquam quaerat facere consectetur nihil eum temporibus eveniet nam sint! Sunt dolore a, quam debitis
+            aliquid quasi, dignissimos porro sequi, fugit possimus tempora? Ut sit nam animi a mollitia? Laborum dolorum
+            odio similique. Ut sapiente commodi soluta culpa, deleniti placeat quasi dolore, architecto vitae debitis
+            laboriosam est minus eius suscipit obcaecati, fugiat delectus officiis vero dicta. Excepturi ratione minus
+            corrupti doloremque. Corrupti quibusdam, illum dolores pariatur obcaecati tempora voluptates quia?
+            Doloremque maiores earum laborum explicabo est eligendi et. Itaque iusto ratione velit nam autem impedit
+            hic. Obcaecati quas reiciendis necessitatibus ipsa distinctio cum impedit repellendus vel laborum natus
+            tenetur in, nemo saepe quibusdam consequatur adipisci deleniti animi, voluptate ad sint, veniam ipsum?
+            Similique, reprehenderit recusandae reiciendis ullam nisi dicta possimus aperiam! Sequi assumenda quae rem
+            soluta, ratione reiciendis dicta nulla. Voluptas inventore ipsa libero corrupti quis necessitatibus
+            distinctio sapiente placeat. Illum recusandae hic neque voluptatum vero cumque, esse id! Placeat quis sit
+            quo, et necessitatibus, aperiam laboriosam iste, adipisci possimus ipsam sunt. Laudantium sapiente deserunt
+            cum odio? Vero, asperiores architecto nemo ipsum mollitia, sed dolor dolorem itaque quam soluta, similique
+            natus quidem cupiditate cum dolores nobis. Impedit nemo omnis, voluptatum accusamus quaerat labore
+            laudantium vitae nulla autem fugit repellat perferendis aperiam placeat deserunt voluptate provident
+            consequatur.</p>
+    </div>
+    <button id='btn' onclick="Hide()">show/hide</button>
+    <script>
+        // var name = 'harry';
+        // var channel = 'CodeWithHarry';
+        // var temp = `${name} is a very nice person and he has a channel called ${channel}`;
+        // console.log(temp);
+        // var len = name.length;
+        // console.log(`Length of name is ${len}`);
+        // console.log("hello world is \n with harry")
+        // sring_fucntion
+        // var str = "Thisisaisstringstring";
+        // console.log(str);
+        // //index of fisrt occurence  substirng
+        // var position = str.indexOf('is');
+        // var last = str.lastIndexOf('is');
+        // console.log(`${position} ${last}`);
+        // var substr = str.substr(1, 4);
+        // console.log(substr);
+        // var replaced = str.replace('string', 'Harry');
+        // var rep2 = replaced.replace('string', 'Harry');
+        // console.log(rep2);
+        // var newString=str.concat('New String');
+        // var char2=str.charCodeAt(2);
+        //scopping in JavaScript
+        // var string1 = "Hatsh";
+        // var string1 = "Harsh1";
+        // console.log(string1);
+        // let a = "u";
+        // {
+        //     let a = "u6";
+        //     console.log(a);
+        // }
+        // console.log(a);
+        // let age = 5;
+        // if (age > 18) {
+        //     console.log("you can drink water")
+        // }
+        // else {
+        //     console.log("You can drink cold Drink");
+        // }
+        //
+        //    array and objects in javascript
+        // let employee = {
+        //     name: "Harry",
+        //     class: 12,
+        // }
+        // console.log(employee);
+        // let names = new Array(1, 2, 3, undefined);
+        // names = names.sort();
+        // names.push("this is pushed")
+        // console.log(names);
+        //function in javascript
+        // let main = document.getElementById('main');
+        // console.log(main);
+        // let nav = document.getElementById('nav');
+        // console.log(nav);
+        // let container = document.getElementsByClassName('container');
+        // console.log(container);
+        // let sel = document.querySelectorAll('#nav>li');
+        // console.log("Selector retuensx", sel);
+        // let para = document.getElementById('para');
+        // para.addEventListener('mouseover', function run() {
+        //     console.log('House Inside');
+
+        // });
+        // para.addEventListener('mouseout', function run() {
+        //     console.log('House outside');
+
+        // });
+        // function Hide() {
+        //     // let btn = document.getElementById('btn');
+        //     // let para = document.getElementById("para");
+        //     if (para.style.display != 'none') {
+        //         para.style.display = 'none';
+        //     }
+        //     else {
+        //         para.style.display = 'block';
+        //     }
+        // }
+        function greet(name, bye) {
+            console.log("Hello Good morinig" + name + bye);
+        }
+        let s = setTimeout(greet, 5000);
+        console.log(s);
+        clearTimeout(s);
+        intervalid = setInterval(greet, 1000);
+        clearInterval(intervalid);
+        function displayTime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+
+        }
+        setInterval(displayTime, 1000);
+
+
+
+
+
+
+
+    </script>
+    <!-- Browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit 
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+
+
+</body>
+
+</html>
